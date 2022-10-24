@@ -1,0 +1,1077 @@
+/* 
+	Website Name : Thirukkuralodu Namm
+	Designed By  : Jegan S.P
+	Developed By : Jegan 
+	Server Working : Marikkannan / Ram
+	Stylesheet Created Date : 01.01.2022
+*/
+/* Third party font */
+/* Third party font */
+@primarycolor:#030084;
+@secondarycolor:#ee0260;
+@boldfont: font-family: 'titillium_websemibold';
+@normalfont: font-family: 'titillium_webregular';
+*
+{
+	margin:0px;
+	padding:0px;
+}
+*, html
+{
+	scrollbar-color:#ee0260 transparent !important;
+	scrollbar-width: thin !important;  
+	outline: unset;
+}
+::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+    background: transparent;
+	border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ee0260; 
+	border-radius:10px; 
+}
+
+::-webkit-scrollbar-corner {
+    background: #000;
+}
+/* Webfonts */
+
+@font-face {
+    font-family: 'titillium_webregular';
+    src: url('../fonts/webfonts/titilliumweb-regular-webfont.eot');
+    src: url('../fonts/webfonts/titilliumweb-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/webfonts/titilliumweb-regular-webfont.woff2') format('woff2'),
+         url('../fonts/webfonts/titilliumweb-regular-webfont.woff') format('woff'),
+         url('../fonts/webfonts/titilliumweb-regular-webfont.ttf') format('truetype'),
+         url('../fonts/webfonts/titilliumweb-regular-webfont.svg#titillium_webregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'titillium_websemibold';
+    src: url('../fonts/webfonts/titilliumweb-semibold-webfont.eot');
+    src: url('../fonts/webfonts/titilliumweb-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/webfonts/titilliumweb-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/webfonts/titilliumweb-semibold-webfont.woff') format('woff'),
+         url('../fonts/webfonts/titilliumweb-semibold-webfont.ttf') format('truetype'),
+         url('../fonts/webfonts/titilliumweb-semibold-webfont.svg#titillium_websemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/* Webfonts End */
+body
+{ 
+	line-height:28px;
+	font-family: 'titillium_webregular', sans-serif;
+	font-size:16px;
+	background:url('../images/pattern.png') no-repeat top right;
+}
+body > .container-fluid::before
+{
+	position:absolute;
+	width:685px;
+	height:555px;
+	background:url('../images/pattern-lft.png') no-repeat top right;
+	left:-40px;
+	z-index:-1;
+}
+body.inner-pages
+{
+	background:url('../images/bg-2.png') repeat-x 0px -21px;
+} 
+button { background:none; }
+a
+{
+	color:#000;
+}
+a:hover, a:focus
+{
+	color:#A00505;
+}
+.form-control
+{
+	height:40px;
+	line-height:22px;
+}
+h2
+{
+	font:34px / 44px 'titillium_websemibold', sans-serif;
+	margin-bottom:30px;
+	color:#030084;
+}
+h3
+{
+	font:30px / 34px 'titillium_websemibold', sans-serif;
+	margin-bottom:30px;
+	color:#030084;
+}
+h4
+{
+	font:26px / 30px 'titillium_websemibold', sans-serif;
+	margin-bottom:30px;
+	color:#030084;
+}
+h4
+{
+	font:22px / 28px 'titillium_websemibold', sans-serif;
+	margin-bottom:30px;
+	color:#030084;
+}
+h2 span, h3 span, h4 span, h5 span
+{
+	color:#ee0260;
+}
+/* Body Image End*/
+/* Header and Menu CSS Start */
+.header-top
+{
+	margin:0px -15px;
+	padding:2px;
+	background:#030084;
+	color:#fff;
+}
+.header-inner
+{
+	width:1140px;
+	margin:0px auto; 
+	font-size:14px;
+} 
+.phoneno
+{
+	display:inline-block;
+	padding-right:15px;
+	margin-right:15px;
+	position:relative;
+}
+.phoneno::after
+{
+	content:'';
+	background:#fff;
+	width:1px;
+	height:10px;
+	position:absolute;
+	right:0px;
+	top:10px;
+}
+.header-inner a
+{
+	color:#fff;
+	transition:1s;
+	margin:0px 10px;
+	position:relative;
+}
+.head-lft
+{
+	float:left;
+}
+.head-rgt
+{
+	float:right;
+}
+.head-rgt a:hover
+{
+	color:#ee0260;
+	transition:1s;
+	text-decoration:none;
+}
+.custom-navbar
+{
+	position:relative;
+	z-index:1;
+}  
+.custom-navbar .navbar-brand
+{
+	height:auto;
+    font-family: 'titillium_websemibold';
+}
+.custom-navbar .navbar-brand img
+{
+	margin-right:15px;
+}
+.custom-navbar .navbar-collapse
+{
+	padding:65px 0px 0px 0px;
+}
+.custom-navbar .navbar-nav li
+{
+	padding:0px 20px;
+}
+.custom-navbar .navbar-nav li a
+{ 
+	color:#030084;
+	padding:0px; 
+	display:block !important;
+	background:none;
+	font-weight:bold;
+	font-size:20px;
+	z-index:1;
+	position:relative;
+} 
+.custom-navbar .navbar-nav li a i
+{
+	display:none;
+}
+.custom-navbar .navbar-nav li a i.fa-cog
+{
+	display:block;
+	position:relative;
+	top:2px;
+}
+.custom-navbar .navbar-nav li a:hover, .custom-navbar .navbar-nav li.active > a, .custom-navbar li.open > a
+{
+	background:none;
+	color:#f01202;
+}
+.custom-dropdown
+{
+	margin-top:10px !important;
+	background:none;
+	box-shadow:none !important;
+	border:none !important;
+	border-radius:0px;
+	padding:0px;
+	margin:0px;
+	left:15px;
+}
+.dropdown-menu li
+{
+	padding:0px !important;
+}
+.dropdown-menu li a
+{
+	padding:10px 0px !important;
+	display:inline-block !important;
+} 
+/* Header and Menu CSS End */
+/* Custom button */
+.custom-btn-reverse
+{
+	border:1px solid #f01202;
+	padding:12px;
+	border-radius:2px;
+	color:#fff;
+	transition:1s;
+	background:#f01202;
+	margin:0px;
+}
+.custom-btn-reverse:hover
+{
+	border:1px solid #ccc;
+	color:#000;
+	transition:1s;
+	background:#ccc;
+}
+.custom-btn
+{
+	border: 1px solid #ee0260;
+	padding: 12px 30px;
+	border-radius: 2px;
+	color: #fff;
+	transition: 2s;
+	background: #ee0260;
+	margin: 0px;
+	font-size: 20px;
+    font-family: 'titillium_websemibold';
+}
+.custom-btn:hover
+{
+	border: 1px solid #030084;
+	color: #fff;
+	transition: 1s;
+	background: #030084;
+}
+.btn-anim {
+	display:inline-block;
+	vertical-align:middle;
+	-webkit-transform:translateZ(0);
+	transform:translateZ(0);
+	box-shadow:0 0 1px rgba(0,0,0,0);
+	-webkit-backface-visibility:hidden;
+	backface-visibility:hidden;
+	-moz-osx-font-smoothing:grayscale;
+	position:relative;
+	-webkit-transition-duration:0.3s;
+	transition-duration:0.3s;
+	-webkit-transition-property:transform;
+	transition-property:transform
+}
+.btn-anim::before {
+	pointer-events:none;
+	position:absolute;
+	z-index:-1;
+	content:'';
+	top:100%;
+	left:5%;
+	height:10px;
+	width:90%;
+	opacity:0;
+	background:-webkit-radial-gradient(center,ellipse,#0000002b 0%,#0000 80%);
+	background:radial-gradient(ellipse at center,#0000002b 0%,#0000 80%) -webkit-transition-duration:0.3s;
+	transition-duration:0.3s;
+	-webkit-transition-property:transform,opacity;
+	transition-property:transform,opacity
+}
+.btn-anim:hover::before,.btn-anim:focus::before,.btn-anim:active::before {
+	opacity:1;
+	-webkit-transform:translateY(5px);
+	transform:translateY(5px)
+}
+/* Custom button End */
+
+/* Notification CSS Start */
+.notify-container
+{
+	position:fixed;
+	top:0px;
+	left:0px;
+	right:0px;
+	bottom:0px;
+	background:#0000006e;
+	z-index:3;
+	padding:10% 0px;
+}
+.notify-center
+{
+	border:1px solid #9b9b9b;
+	width:700px;
+	min-height:300px;
+	margin:0px auto;
+	text-align:center;
+	padding:30px;
+	background:#1c1c1cdb;
+	position:relative;
+	border-radius:3px;
+	box-shadow:0px 15px 17px #575555;
+}
+.notify-center h1
+{
+	font-size:35px;
+	color:#fff;
+	margin-bottom:40px;
+}
+.notify-center p
+{
+	color:#fff;
+	line-height:30px;
+	overflow:hidden;
+}
+.notify-center span.nclose
+{
+	position:absolute;
+	right:15px;
+	top:15px;
+	color:#fff;
+	display:inline-block;
+	width:25px;
+	height:25px;
+	border-radius:100%;
+	border:1px solid #fff;
+	cursor:pointer;
+}
+.notify-container.Active
+{
+	display:block;
+}
+.notify-container.Inactive
+{
+	display:none;
+}
+/* Notification CSS End */
+
+/* Back-To-Top */
+.cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background:url("../images/cd-top-arrow.png") no-repeat center 50%;
+  visibility: hidden;
+  opacity: 0;
+  z-index:12;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+  outline:0;
+
+}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover, .cd-top:active, .cd-top:visit {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+  outline:0;
+}
+.cd-top.cd-is-visible {
+   visibility: visible;
+  opacity: 1;
+  outline:0;
+}
+.cd-top.cd-fade-out {
+    opacity: 0;
+  outline:0;
+}
+/* Back-To-Top End */
+/* Navabr Top */
+.custom-navbar a.navbar-brand
+{
+	color:#030084;
+	text-align:center;
+	font-size:20px;
+}
+.custom-navbar p
+{
+	margin:0px;
+}
+.custom-navbar a img
+{
+	display:inline-block;
+}
+.custom-navbar a span
+{
+	color:#ee0260;
+}
+.tagline
+{
+	font-size:12px;
+	color:#a7a7a7 !important;
+	position:relative;
+	top:-5px;
+	display:none;
+}
+/* Navabr Top End*/
+/* Carousel banner */
+.custom-banner-fluid
+{
+	margin:0px -15px;
+	padding:0px; 
+}
+.custom-carousel .item
+{
+	height:450px; 
+}
+.custom-carousel .carousel-caption
+{
+	width:550px;
+	right:0px;
+	left:8.3%;
+	text-align:left; 
+	bottom:10%;
+}
+.custom-carousel .carousel-caption h3
+{
+	font-family: 'Anton', sans-serif;
+	font-size:70px;
+	line-height:70px;
+	color:#030084;
+	text-shadow:none;
+	text-transform:uppercase;
+} 
+.custom-carousel .carousel-caption h3 span
+{
+	color:#ee0260;
+} 
+.custom-carousel .carousel-caption p
+{
+	color:#000;
+	font-size:23px;
+	text-shadow:none;
+	line-height:40px;
+	margin-bottom:30px;
+}
+.custom-carousel a.left, .custom-carousel a.right
+{
+	background:none;
+}
+.banner-img
+{  
+	text-align:right;
+	height:100%;
+	padding-right:40px;
+}
+.banner-img img
+{
+	height:100%;
+	width:50%;
+}
+.custom-carousel .carousel-caption
+{
+	color:#000;
+	text-shadow:none;
+	font-size:30px;
+}
+.carousel-control
+{
+	width:9%;
+	font-size:50px;
+	text-shadow:none;
+	left:0%;
+	top:25%;
+	color:#ee0260;
+}
+.carousel-control:focus, .carousel-control:hover
+{
+	color:#ee0260;
+}
+/* Carousel banner End */
+/* Body Container */
+
+.login a
+{
+	background:#ee0260 !important;
+	padding:10px !important;
+	border-radius:20px;
+	color:#fff !important;
+	font-size:14px !important;
+	top:-10px;
+} 
+.bg-gray
+{
+	background:#f3f5ed;
+	padding:30px 0px;
+	margin:70px -15px;
+}
+.bg-gray h2
+{
+	padding:0px 20%;
+	text-align:center;
+	font:34px / 44px 'titillium_websemibold', sans-serif;
+	margin-bottom:30px;
+	color:#030084;
+}
+.bg-gray h2 span
+{
+	color:#ee0260;
+}
+/* Product intro part */
+.sky-bg
+{
+	background:#e7f5ff;
+	padding:30px 0px;
+	margin:70px -15px;
+} 
+/* Product intro part end */
+.prod-main
+{
+	text-align:center;
+	cursor:pointer;
+}
+.prod-overview
+{
+	display:inline-block;
+	margin:40px 0px 20px 0px;
+	position:relative;
+}
+.prod-img
+{
+	width:200px;
+	height:200px;
+	background:#fff;
+	border-radius:100%;
+	overflow:hidden;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+.prod-overview::before
+{
+	content:''; 
+	position:absolute;
+	inset:-20px -20px -20px -20px;
+	border:1px solid #fff;
+	padding:20px;
+	border-radius:100%;
+	transition:1s;
+}
+.prod-overview:hover::before
+{
+	inset:-10px -10px -10px -10px;
+	border:1px solid #fff;
+	transition:1s;
+	animation:brdranim 4s linear infinite alternate;
+	animation-delay:1s;
+}
+.prod-img img
+{
+	width:80%;
+	height:auto; 
+}
+.prod-main h3
+{
+	color:#030084;
+	font-family: 'titillium_websemibold';
+}
+.prod-main p
+{
+	padding:0px 20px;
+	margin-bottom:30px;
+}
+@keyframes brdranim
+{
+	0% { border-color:#fff;}
+	100% { border-color:#ee0260;}
+}
+.ourfeature p
+{
+	margin:20px 0px;
+}
+.ourfeature .custom-btn
+{
+	margin:20px 0px;
+}
+.ourf-img img
+{ 
+}
+/* Future products here */
+.fp-inner
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.future-prod, .future-prod h2
+{
+	text-align:center;
+}
+.fp-disp
+{
+	margin:40px 0px;
+	text-align:left;
+}
+.fp-disp h4
+{
+	font-family: 'titillium_websemibold';
+	font-size:24px;
+	color:#ee0260;
+}
+.fp-disp h4 i
+{
+	font-size:24px;
+}
+.fp-disp:nth-child(odd) h4
+{
+	color:#030084 !important;
+}
+/* Future products here End*/
+/* Testimonial Container Start */
+.testimonial-cond
+{ 
+}
+.moni-carousel
+{
+	width:80%;
+	margin:40px auto;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+.testimonial-img
+{
+	height:300px;
+	width:300px;
+	border-radius:100%;
+	border:1px dashed #ccc;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	margin:auto;
+	overflow:hidden;
+	background:#f4e9e3;
+	text-align:center;
+}
+.testimonial-img img
+{
+	width:auto; 
+	height:auto;
+	transform:scale(1.3);
+}
+.moni-carousel h5
+{
+	font-family: 'titillium_websemibold';
+	font-size:26px;
+	margin:5px 0px 30px 0px;
+	color:#ee0260;
+}
+.moni-carousel h5 span
+{
+	font-family: 'titillium_webregular';
+	font-size:18px;
+	color:#030084;
+}
+.moni-carousel .left, .moni-carousel .right
+{
+	background:none;
+}
+/* Testimonial Container End */
+/* Body Container End */
+/* Footer Start */
+.footer
+{
+	padding:40px 0px;
+	background:#d4fdff;
+	margin:50px -15px 0px -15px;
+}
+.f-c1 span
+{ 
+	display:inline-block;
+	margin:15px 0px;
+}
+.copyright
+{
+	background:#030084;
+	padding:10px 0px;
+	color:#fff;
+	font-size:14px;
+	text-align:center;
+	margin:0px -15px;
+}
+.ft-logo
+{
+	margin-bottom:5px;
+}
+.ft-infolink a
+{
+	display:block;
+	margin:5px 0px 5px -5px;
+	transition:1s;
+} 
+.ft-infolink a:hover
+{
+	text-decoration:none;
+	color:#ee0260;
+	transition:1s;
+} 
+.ft-add p span
+{
+	font-size:18px; 
+	color:#ee0260;
+	font-family: 'titillium_websemibold';
+	display:block;
+}
+/* Footer End */
+/* About us page css start */
+.aboutus-container
+{ 
+	position:relative;
+	min-height:500px;
+}
+.aboutus-container h1, .aboutus-container h2, .headingtxt
+{
+	font-family: 'Anton', sans-serif;
+	color:#ee0260;
+}
+.aboutus-container h1 span, .aboutus-container h2 span, .headingtxt span
+{
+	font-family: 'titillium_websemibold';
+	font-size:26px;
+	display:block;
+	line-height:45px;
+	color:#030084;
+}
+.aboutus-container img
+{
+	margin:0px 20px 20px 0px;
+}
+.ourpartner
+{
+	text-align:center;
+	margin:40px 0px;
+}
+.ourpartner p
+{
+	padding:0px 20%;
+}
+/*.aboutus-container::after
+{
+	content:'';
+	width:594px;
+	height:417px; 
+	position:absolute;
+	top:0px;
+	right:0px;	
+	background:url('../images/aboutus.png') no-repeat 0px 0px;
+}*/
+.bf-cont
+{ 
+	text-align:center;
+}
+.bf-cont i
+{
+	font-size:40px;
+	margin:10px 0px;
+	color:#ee0260;
+	/*animation:txtcolor 10s linear infinite;*/
+}
+.bf-cont p
+{
+	font-size:16px;
+	font-family: 'titillium_websemibold';
+	color:#030084;
+}
+.bf-cont p span
+{
+	font-family: 'titillium_webregular';
+	display:block;
+	font-size:16px;
+}
+@keyframes txtcolor
+{
+	0% { color:#030084;}
+	100% { color:#ee0260; }
+}
+.prod-inner
+{
+	position:relative;
+	padding-right:20%;
+	min-height:260px;  
+	padding-top:20px;
+}
+.prod-inner span
+{
+	position:absolute;
+	right:-107px;
+	top:-60%; 
+	width:300px;
+	height:480px;
+	overflow:hidden;
+}
+.prod-inner span img
+{
+	animation:imgrotate 60s linear infinite;
+}
+@keyframes imgrotate
+{
+	0% { transform:rotate(0deg);}
+	100% { transform:rotate(360deg); }
+}
+.prods
+{ 
+	text-align:center;
+	position:relative;
+	cursor:pointer;
+	margin:10px 0px; 
+	padding:20px 0px;
+	border:1px solid #efefef;
+	border-radius:6px;
+	transition:1s;
+}
+.prods:hover
+{
+	transition:1s;
+	border:1px dashed #c9c8c8;
+}
+.prods p.img
+{ 
+	border-radius:100%;
+	overflow:hidden;
+	width:170px;
+	height:170px;
+	border:1px solid #e2e2e2; 
+	padding:10px;
+	margin:0px auto;
+}
+.prods p img
+{
+	width:100%;
+	height:100%;
+	border-radius:100%;
+	border-right:1px solid #e2e2e2;
+	transform:scale(1.4);
+}
+.prods h1
+{
+	font-family: 'titillium_websemibold';
+	font-size:20px;
+	color:#030084;
+	margin:10px 0px;
+}
+.prods p
+{
+	height:110px;
+	overflow:hidden;
+	padding:0px 20px;
+}
+.prods a:hover
+{
+	color:#ee0260;
+	text-decoration:none;
+	position:relative;
+	z-index:1;
+}
+/* About us page css end */
+/* Product list */
+.quotes
+{
+	margin:30px 80px;
+	position:relative;
+}
+.quotes::before
+{
+	content:"\f10d";
+	font-family:'FontAwesome';
+	font-size:30px;
+	position:absolute;
+	left:-70px;
+	color:#030084;
+}
+.quotes::after
+{
+	content:"\f10e";
+	font-family:'FontAwesome';
+	font-size:30px;
+	position:absolute;
+	right:-50px;
+	color:#030084;
+	top:0px;
+}
+.prod-list
+{
+	border:1px solid #ccc;
+	padding:20px;
+	margin:20px 0px 0px; 
+}
+.prod-list h2
+{
+	position:sticky; 
+	padding: 0px 20px;
+	margin:-20px -20px 0px -20px;
+	font-size: 16px;
+	background: #030084;
+	color: #fdffff;
+}
+.prod-lnks
+{
+	height:400px; 
+	overflow:auto;
+}
+.prod-lnks a
+{
+	display:block;
+	padding:5px 0px; 
+}
+.prod-lnks a:hover
+{
+	text-decoration:none;
+	color:#ee0260;
+}
+.prod-lnks a i
+{
+	margin:0px 10px 0px -5px;
+}
+.prod-cnt
+{
+	margin:20px 0px 0px 0px; 
+}
+.prod-cntimg 
+{
+	overflow:hidden;
+	display:flex;
+}
+.prod-cntimg span
+{
+	display:inline-block;
+	width:200px;
+	height:200px; 
+	overflow:hidden;
+	border-radius:4px;	
+}
+.prod-cntimg img
+{
+	width:200px;
+	height:200px;
+	transform:scale(1.2);
+}
+.prod-cntimg ul
+{
+	display:inline-block;
+	margin:0px 30px;
+	list-style-type:none;
+	font-size:18px;
+	color:#ee0260;
+}
+.prod-cntimg ul li
+{
+	margin:0px 0px 10px 0px;
+}
+.prod-cntimg ul li strong
+{
+	color:#030084;
+	margin-right:20px;
+	display:block;
+}
+.prod-cnt h3
+{
+	font-size:24px;
+	margin:20px 0px 5px 0px;
+}
+.contactus-container textarea
+{
+	resize:none;
+}
+.contactus-container img
+{
+	padding-top:10%;
+}
+.contact-frm label
+{
+	color:#030084;
+	font-family: 'titillium_websemibold';
+}
+/* Product list End */
+/* Service Image */
+.serv-img
+{
+	text-align:center; 
+}
+.serv-cont
+{
+	margin-bottom:40px;
+}
+.serv-cont h1
+{
+	font-size:45px;
+	font-family: 'titillium_websemibold';
+	margin:30px 0px 20px 0px;
+}
+.serv-cont ul
+{
+	margin-left:10px;
+	list-style-type:none;
+}
+.serv-cont ul li
+{
+	padding:6px 0px;
+}
+.serv-cont ul li i
+{ 
+	color:#ee0260;
+	position:relative;
+	left:-10px;
+	font-size:18px;
+} 
+/* Service Image End */
+/* Act & Rules */
+.act-rules ol li, .act-rules ul li
+{
+	margin-left:15px;
+	padding:5px 10px; 
+}
+.act-rules ol li a, .act-rules ul li a
+{ 
+	transition:1s;
+}
+.act-rules ol li a:hover, .act-rules ul li a:hover
+{
+	color:#ee0260;
+	transition:1s;
+}
+/* Act & Rules End */
